@@ -62,14 +62,14 @@
     gap: 15px;
 }
 .remember input{
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
 .form-switch{
     margin-top: 40px;
     color: #737373;
 }
-form-switch span{
+.form-switch span{
     margin-left: 6px;
     color: #fff;
     font-weight: 500;
