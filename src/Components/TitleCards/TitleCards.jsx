@@ -33,7 +33,7 @@ useEffect(()=>{
   .catch(err => console.error(err));
 
   cardsRef.current.addEventListener('wheel', handleWheel);
-},[])
+},[]);
 
 
   return (
