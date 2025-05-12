@@ -43,16 +43,19 @@ const signup = async (name, email, password)=>{
 
 }
 
-const login = async ()=>{
-    try{
-        signInWithEmailAndPassword(auth, email, password);
-
-    }catch(error)
-    {
-     console.log(error);
-     toast.error(error.code.split('/')[1].split('-').join(" "));
+const login = async (email, password) => {
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+  } catch (error) {
+    console.log(error);
+    if (error.code) {
+      toast.error(error.code.split('/')[1].split('-').join(' '));
+    } else {
+      toast.error("An unexpected error occurred.");
     }
-}
+  }
+};
+
 
 const logout = ()=>{
     signOut(auth);
