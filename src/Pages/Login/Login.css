@@ -76,10 +76,10 @@
     cursor: pointer;
 }
 @media(max-width: 768px){
-    .login-form{
+    .login{
         padding: 15px 5%;
     }
-    .login-form h1{
+    .login-form{
         font-size: 20px;
         margin-top: 30px;
     }
